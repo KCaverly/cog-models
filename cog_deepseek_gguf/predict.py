@@ -3,16 +3,14 @@ from cog import BasePredictor, Input, ConcatenateIterator
 from llama_cpp import Llama
 
 PROMPT_TEMPLATE = "{system_prompt}/n### INSTRUCTION: {prompt}/n### RESPONSE: "
-SYSTEM_PROMPT = """You are an AI programming assistant, utilizing the Deepseek Code model, 
-                developed by Deepseek Company, and you only answer questions related to computer science. 
-                For politically sensitive questions, security and privacy issues, 
-                and other non-computer science questions, you will refuse to answer."""
+SYSTEM_PROMPT = "You are an AI programming assistant, utilizing the Deepseek Code model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer."
+
 
 
 class Predictor(BasePredictor):
     def setup(self) -> None:
         """Load the model into memory to make running multiple predictions efficient"""
-        self.model = Llama(model_path="./deepseek-coder-33b-instruct.Q5_K_M.gguf", n_gpu_layers=50, n_ctx=16000, n_threads=3)
+        self.model = Llama(model_path="./deepseek-coder-33b-instruct.Q5_K_M.gguf", n_gpu_layers=32, n_ctx=16000)
 
     def predict(
         self,
