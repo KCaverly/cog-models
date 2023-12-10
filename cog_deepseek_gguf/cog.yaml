@@ -1,4 +1,4 @@
-image: "r8.im/kcaverly/deepseek-coder-1.3b-instruct-gguf"
+image: "r8.im/kcaverly/deepseek-coder-33b-instruct-gguf"
 build:
   gpu: true
   cuda: "11.7"
