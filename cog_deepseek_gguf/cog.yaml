@@ -2,12 +2,12 @@ image: "r8.im/kcaverly/deepseek-coder-33b-instruct-gguf"
 build:
   gpu: true
   cuda: "11.7"
+  system_packages:
+    - "wget"
+    - "cmake"
+    - "g++"
+    - "build-essential"
   python_version: "3.11"
-  python_packages:
-    - "torch==2.0.1"
-    - "transformers==4.35.2"
-    - "nvidia-cuda-runtime-cu11==11.7.99"
-    - "nvidia-cublas-cu11==11.11.3.6"
   run:
-    - 'CMAKE_ARGS="-DLLAMA_BLAS=ON -DLLAMA_BLAS_VENDOR=OpenBLAS" pip install llama-cpp-python'
+    - "CMAKE_ARGS='-DLLAMA_CUBLAS=on' FORCE_CMAKE=1 pip install llama-cpp-python --no-cache-dir"
 predict: "predict.py:Predictor"

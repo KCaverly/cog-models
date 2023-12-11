@@ -1,4 +1,3 @@
-import json
 from cog import BasePredictor, Input, ConcatenateIterator
 from llama_cpp import Llama
 
@@ -10,7 +9,7 @@ SYSTEM_PROMPT = "You are an AI programming assistant, utilizing the Deepseek Cod
 class Predictor(BasePredictor):
     def setup(self) -> None:
         """Load the model into memory to make running multiple predictions efficient"""
-        self.model = Llama(model_path="./deepseek-coder-33b-instruct.Q5_K_M.gguf", n_gpu_layers=-1, n_ctx=2048, n_threads=1)
+        self.model = Llama(model_path="./deepseek-coder-33b-instruct.Q5_K_M.gguf", n_gpu_layers=-1, n_ctx=2048, n_threads=1, main_gpu=0)
 
     def predict(
         self,
@@ -25,8 +24,5 @@ class Predictor(BasePredictor):
 
         full_prompt = prompt_template.replace("{prompt}", prompt).replace("{system_prompt}", system_prompt)
 
-        stream = self.model.create_completion(full_prompt, stream=True, repeat_penalty=repeat_penalty, max_tokens=max_new_tokens, temperature=temperature)
-
-        for output in stream:
+        for output in self.model(full_prompt, stream=True, repeat_penalty=repeat_penalty, max_tokens=max_new_tokens, temperature=temperature):
             yield output['choices'][0]['text']
-
