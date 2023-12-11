@@ -10,7 +10,7 @@ SYSTEM_PROMPT = "You are an AI programming assistant, utilizing the Deepseek Cod
 class Predictor(BasePredictor):
     def setup(self) -> None:
         """Load the model into memory to make running multiple predictions efficient"""
-        self.model = Llama(model_path="./deepseek-coder-33b-instruct.Q5_K_M.gguf", n_gpu_layers=32, n_ctx=2048, n_threads=1)
+        self.model = Llama(model_path="./deepseek-coder-33b-instruct.Q5_K_M.gguf", n_gpu_layers=-1, n_ctx=2048, n_threads=1)
 
     def predict(
         self,
