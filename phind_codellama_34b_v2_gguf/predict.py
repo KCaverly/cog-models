@@ -1,7 +1,7 @@
 from cog import BasePredictor, Input, ConcatenateIterator
 from llama_cpp import Llama
 
-PROMPT_TEMPLATE = "### System Prompt\n{system_prompt}/n### User Message\n{prompt}/n### Assistant\n"
+PROMPT_TEMPLATE = "### System Prompt\n{system_prompt}\n### User Message\n{prompt}\n### Assistant\n"
 SYSTEM_PROMPT = "You are an intelligent programming assistant."
 
 
@@ -9,7 +9,7 @@ SYSTEM_PROMPT = "You are an intelligent programming assistant."
 class Predictor(BasePredictor):
     def setup(self) -> None:
         """Load the model into memory to make running multiple predictions efficient"""
-        self.model = Llama(model_path="./phind-codellama-34b-v2.q5_K_M.gguf", n_gpu_layers=-1, n_ctx=4096, n_threads=1, main_gpu=0)
+        self.model = Llama(model_path="./phind-codellama-34b-v2.Q5_K_M.gguf", n_gpu_layers=-1, n_ctx=4096, n_threads=1, main_gpu=0)
 
     def predict(
         self,
