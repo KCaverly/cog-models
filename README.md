@@ -1,6 +1,10 @@
 # cog-models
 A collection of cog models for use on Replicate
 
+### General Language Models
+
+- [kcaverly/dolphin-2.5-mixtral-8x7b-gguf](https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf)
+
 ### Coding Models
 
 - [kcaverly/deepseek-coder-6.7b-instruct](https://replicate.com/kcaverly/deepseek-coder-6.7b-instruct)
