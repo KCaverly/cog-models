@@ -2,7 +2,7 @@ from cog import BasePredictor, Input, ConcatenateIterator
 from llama_cpp import Llama
 
 PROMPT_TEMPLATE = "<|im_start|>system\n{system_prompt}<|im_end|>\n<|im_start|>user\n{prompt}<|im_end|>\n<|im_start|>assistant"
-SYSTEM_PROMPT = "You are an AI programming assistant, utilizing the Deepseek Code model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer."
+SYSTEM_PROMPT = "You are Dolphin, a helpful AI assistant."
 
 
 class Predictor(BasePredictor):
