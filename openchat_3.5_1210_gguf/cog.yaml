@@ -1,4 +1,4 @@
-image: "r8.im/kcaverly/openchat_3.5_1210_gguf"
+image: "r8.im/kcaverly/openchat-3.5-1210-gguf"
 build:
   gpu: true
   cuda: "11.7"
