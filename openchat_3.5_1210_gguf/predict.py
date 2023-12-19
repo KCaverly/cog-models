@@ -8,7 +8,7 @@ class Predictor(BasePredictor):
     def setup(self) -> None:
         """Load the model into memory to make running multiple predictions efficient"""
         self.model = Llama(
-            model_path="./openchat-3.5-1210-GGUF.Q5_K_M.gguf",
+            model_path="./openchat-3.5-1210.Q5_K_M.gguf",
             n_gpu_layers=-1,
             n_ctx=8192,
             n_threads=1,
