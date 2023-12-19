@@ -4,6 +4,7 @@ A collection of cog models for use on Replicate
 ### General Language Models
 
 - [kcaverly/dolphin-2.5-mixtral-8x7b-gguf](https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf)
+- [kcaverly/openchat-3.5-1210-gguf](https://replicate.com/kcaverly/openchat-3.5-1210-gguf)
 
 ### Coding Models
 
