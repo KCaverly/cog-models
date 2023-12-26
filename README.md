@@ -6,6 +6,7 @@ A collection of cog models for use on Replicate
 - [kcaverly/dolphin-2.5-mixtral-8x7b-gguf](https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf)
 - [kcaverly/dolphin-2.6-mixtral-8x7b-gguf](https://replicate.com/kcaverly/dolphin-2.6-mixtral-8x7b-gguf)
 - [kcaverly/openchat-3.5-1210-gguf](https://replicate.com/kcaverly/openchat-3.5-1210-gguf)
+- [kcaverly/nous-hermes-2-yi-34b-gguf](https://replicate.com/kcaverly/nous-hermes-2-yi-34b-gguf)
 
 ### Coding Models
 
