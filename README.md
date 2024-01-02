@@ -3,6 +3,7 @@ A collection of cog models for use on Replicate
 
 ### General Language Models
 
+- [kcaverly/dolphin-2.7-mixtral-8x7b-gguf](https://replicate.com/kcaverly/dolphin-2.7-mixtral-8x7b-gguf)
 - [kcaverly/dolphin-2.5-mixtral-8x7b-gguf](https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf)
 - [kcaverly/dolphin-2.6-mixtral-8x7b-gguf](https://replicate.com/kcaverly/dolphin-2.6-mixtral-8x7b-gguf)
 - [kcaverly/dolphin-2.6-mistral-7b-gguf](https://replicate.com/kcaverly/dolphin-2.6-mistral-7b-gguf)
