@@ -1,0 +1,13 @@
+image: "r8.im/kcaverly/nous-capybara-34b-gguf"
+build:
+  gpu: true
+  cuda: "11.7"
+  system_packages:
+    - "wget"
+    - "cmake"
+    - "g++"
+    - "build-essential"
+  python_version: "3.11"
+  run:
+    - "CMAKE_ARGS='-DLLAMA_CUBLAS=on' FORCE_CMAKE=1 pip install llama-cpp-python --no-cache-dir"
+predict: "predict.py:Predictor"
