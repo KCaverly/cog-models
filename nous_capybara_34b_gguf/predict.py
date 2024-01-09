@@ -11,7 +11,7 @@ class Predictor(BasePredictor):
         self.model = Llama(
             model_path="./nous-capybara-34b.Q4_0.gguf",
             n_gpu_layers=-1,
-            n_ctx=200000,
+            n_ctx=32000,
             n_threads=1,
             main_gpu=0,
         )
@@ -28,7 +28,7 @@ class Predictor(BasePredictor):
             default=PROMPT_TEMPLATE,
         ),
         max_new_tokens: int = Input(
-            description="Maximum new tokens to generate.", default=-1
+            description="Maximum new tokens to generate.", default=512
         ),
         repeat_penalty: float = Input(
             description="This parameter plays a role in controlling the behavior of an AI language model during conversation or text generation. Its purpose is to discourage the model from repeating itself too often by increasing the likelihood of following up with different content after each response. By adjusting this parameter, users can influence the model's tendency to either stay within familiar topics (lower penalty) or explore new ones (higher penalty). For instance, setting a high repeat penalty might result in more varied and dynamic conversations, whereas a low penalty could be suitable for scenarios where consistency and predictability are preferred.",
