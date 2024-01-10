@@ -8,6 +8,7 @@ A collection of cog models for use on Replicate
 - [kcaverly/nous-hermes-2-yi-34b-gguf](https://replicate.com/kcaverly/nous-hermes-2-yi-34b-gguf)
 
 #### Archive:
+- [kcaverly/nous-capybara-34b-gguf](https://replicate.com/kcaverly/nous-capybara-34b-gguf)
 - [kcaverly/nous-hermes-2-solar-10.7b-gguf](https://replicate.com/kcaverly/nous-hermes-2-solar-10.7b-gguf)
 - [kcaverly/dolphin-2.7-mixtral-8x7b-gguf](https://replicate.com/kcaverly/dolphin-2.7-mixtral-8x7b-gguf)
 - [kcaverly/dolphin-2.6-mixtral-8x7b-gguf](https://replicate.com/kcaverly/dolphin-2.6-mixtral-8x7b-gguf)
