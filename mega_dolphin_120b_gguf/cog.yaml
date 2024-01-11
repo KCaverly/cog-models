@@ -1,4 +1,4 @@
-image: "r8.im/kcaverly/mega-dolphin-120b-gguf"
+image: "r8.im/kcaverly/megadolphin-120b-gguf"
 build:
   gpu: true
   cuda: "11.7"
