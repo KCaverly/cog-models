@@ -1,4 +1,4 @@
-image: "r8.im/kcaverly/neural-beagle-14-7b-gguf"
+image: "r8.im/kcaverly/neuralbeagle14-7b-gguf"
 build:
   gpu: true
   cuda: "11.7"
