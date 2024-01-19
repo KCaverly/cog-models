@@ -51,5 +51,6 @@ class Predictor(BasePredictor):
             repeat_penalty=repeat_penalty,
             max_tokens=max_new_tokens,
             temperature=temperature,
+            stop=["<|im_end|>"],
         ):
             yield output["choices"][0]["text"]
